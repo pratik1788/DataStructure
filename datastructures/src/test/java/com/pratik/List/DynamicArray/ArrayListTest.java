@@ -4,13 +4,11 @@ import com.pratik.List.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
-public class MyArrayListTest {
+public class ArrayListTest {
 
     @Test
     public void testAddMethod(){
-        List<String> arrayList=new MyArrayList<>(4);
+        List<String> arrayList=new ArrayList<>(4);
         arrayList.add("1");
         arrayList.add("2");
         arrayList.add("3");
@@ -29,7 +27,7 @@ public class MyArrayListTest {
     }
     @Test
     public void testRemoveMethod(){
-        List<Integer> arrayList=new MyArrayList<>();
+        List<Integer> arrayList=new ArrayList<>();
         arrayList.add(5);
         arrayList.add(7);
         arrayList.add(11);

@@ -2,15 +2,15 @@ package com.pratik.List.DynamicArray;
 
 import com.pratik.List.List;
 
-public class MyArrayList<T> implements List<T> {
+public class ArrayList<T> implements List<T> {
     private final static int INITIAL_CAPACITY=8;
     private int currentPointer=0;
     private int currentCapacity=INITIAL_CAPACITY;
     private Object[] array;
-    public MyArrayList() {
+    public ArrayList() {
         array = new Object[INITIAL_CAPACITY];
     }
-    public MyArrayList(int initialCapacity){
+    public ArrayList(int initialCapacity){
         array = new Object[initialCapacity];
         currentCapacity=initialCapacity;
     }
