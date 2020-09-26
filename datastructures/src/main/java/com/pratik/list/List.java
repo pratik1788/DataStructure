@@ -1,4 +1,4 @@
-package com.pratik.List;
+package com.pratik.list;
 
 public interface List<T> {
     void add(T element);

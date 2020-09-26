@@ -1,6 +1,6 @@
-package com.pratik.List.LinkList;
+package com.pratik.list.linklist;
 
-import com.pratik.List.List;
+import com.pratik.list.List;
 
 public class SinglyLinkList<T> implements List<T> {
 

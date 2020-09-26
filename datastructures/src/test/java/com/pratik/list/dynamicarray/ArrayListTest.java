@@ -1,6 +1,6 @@
-package com.pratik.List.DynamicArray;
+package com.pratik.list.dynamicarray;
 
-import com.pratik.List.List;
+import com.pratik.list.List;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
-package com.pratik.List.DynamicArray;
+package com.pratik.list.dynamicarray;
 
-import com.pratik.List.List;
+import com.pratik.list.List;
 
 public class ArrayList<T> implements List<T> {
     private final static int INITIAL_CAPACITY=8;

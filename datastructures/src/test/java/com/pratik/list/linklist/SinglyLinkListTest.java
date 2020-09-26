@@ -1,10 +1,8 @@
-package com.pratik.List.LinkList;
+package com.pratik.list.linklist;
 
-import com.pratik.List.List;
+import com.pratik.list.List;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class SinglyLinkListTest {
 
@@ -35,7 +33,7 @@ public class SinglyLinkListTest {
         Assert.assertEquals(3,singlyList.size());
         Assert.assertEquals("1",singlyList.get(0));
         Assert.assertEquals("2",singlyList.get(1));
-        Assert.assertEquals("3",singlyList.get(2));
+        Assert.assertEquals("5",singlyList.get(2));
 
     }
 }
