@@ -44,6 +44,12 @@ public class SinglyLinkList<T> implements List<T> {
     }
 
     @Override
+    public void add(int index, T element) {
+        throw new RuntimeException("Not Defined");
+    }
+
+
+    @Override
     public T get(int index) {
         Node travesedElement=start;
         for(int count=0;count<index;count++){

@@ -38,4 +38,20 @@ public class ArrayListTest {
         Assert.assertTrue(11==arrayList.get(1));
 
     }
+
+    @Test
+    public void testAddWithIndexMethod(){
+        List<Integer> arrayList=new ArrayList<>(2);
+        arrayList.add(5);
+        arrayList.add(7);
+        arrayList.add(11);
+        Assert.assertEquals(3,arrayList.size());
+        arrayList.add(2,6);
+        Assert.assertEquals(4,arrayList.size());
+        Assert.assertTrue(6==arrayList.get(2));
+        arrayList.add(17);
+        Assert.assertEquals(5,arrayList.size());
+        Assert.assertTrue(17==arrayList.get(4));
+
+    }
 }
