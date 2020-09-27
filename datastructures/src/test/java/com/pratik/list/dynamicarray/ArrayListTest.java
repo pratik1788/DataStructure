@@ -34,8 +34,8 @@ public class ArrayListTest {
         Assert.assertEquals(3,arrayList.size());
         arrayList.remove(7);
         Assert.assertEquals(2,arrayList.size());
-        Assert.assertTrue(5==arrayList.get(0));
-        Assert.assertTrue(11==arrayList.get(1));
+        Assert.assertEquals(Integer.valueOf(5), arrayList.get(0));
+        Assert.assertEquals(Integer.valueOf(11), arrayList.get(1));
 
     }
 
@@ -48,10 +48,10 @@ public class ArrayListTest {
         Assert.assertEquals(3,arrayList.size());
         arrayList.add(2,6);
         Assert.assertEquals(4,arrayList.size());
-        Assert.assertTrue(6==arrayList.get(2));
+        Assert.assertEquals(Integer.valueOf(6), arrayList.get(2));
         arrayList.add(17);
         Assert.assertEquals(5,arrayList.size());
-        Assert.assertTrue(17==arrayList.get(4));
+        Assert.assertEquals(Integer.valueOf(17), arrayList.get(4));
 
     }
 }

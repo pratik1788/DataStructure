@@ -4,18 +4,18 @@ import com.pratik.list.dynamicarray.ArrayList;
 import com.pratik.list.linklist.SinglyLinkList;
 import com.pratik.map.Map;
 
-public class HashMap  <K,V>implements Map <K,V> {
+public class HashMap <K,V>implements Map <K,V> {
 
     public static final int INITIAL_CAPACITY=16;
     private int currentCapacity=INITIAL_CAPACITY;
     private int size=0;
 
     private Entry[] map;
-    private class Entry<K,V>{
+    private static class Entry<K,V>{
         private K key;
         private V value;
         private int hash;
-        private Entry next;
+        private Entry<K,V> next;
     }
 
     public HashMap(){
@@ -39,8 +39,7 @@ public class HashMap  <K,V>implements Map <K,V> {
            map[hashValue]= bucketEntry;
            size++;
        }else{
-           Entry<K,V> bucketEntry = map[hashValue];
-           Entry<K,V> traverseEntry= bucketEntry;
+           Entry traverseEntry= map[hashValue];
            while(traverseEntry !=null){
                if(!traverseEntry.key.equals(key)){
                    if(traverseEntry.next == null){
@@ -73,8 +72,7 @@ public class HashMap  <K,V>implements Map <K,V> {
         V value=null;
         int hashValue= calculateHash(key,currentCapacity);
         if(map[hashValue] != null){
-            Entry<K,V> bucketEntry = map[hashValue];
-            Entry<K,V> traverseEntry= bucketEntry;
+            Entry<K,V> traverseEntry= map[hashValue];
             while(traverseEntry !=null){
                 if(traverseEntry.key.equals(key)){
                     value= traverseEntry.value;

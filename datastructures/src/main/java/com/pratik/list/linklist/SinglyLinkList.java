@@ -13,11 +13,11 @@ public class SinglyLinkList<T> implements List<T> {
         T element;
         Node next;
 
-        public T getElement() {
+        private T getElement() {
             return element;
         }
 
-        public Node getNext() {
+        private Node getNext() {
             return next;
         }
     }
@@ -30,7 +30,6 @@ public class SinglyLinkList<T> implements List<T> {
             this.start.next=null;
             this.end=this.start;
             this.current=this.start;
-            this.position++;
         }
         else {
             Node tmp = new Node();
@@ -39,8 +38,8 @@ public class SinglyLinkList<T> implements List<T> {
             tmp.next = null;
             this.end = tmp;
             this.current=tmp;
-            this.position++;
         }
+        this.position++;
     }
 
     @Override

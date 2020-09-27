@@ -16,7 +16,7 @@ public class HashMapTest {
         Assert.assertEquals("Two",map.get("2"));
         Assert.assertEquals("One",map.get("1"));
         Assert.assertEquals("Three",map.get("3"));
-        Assert.assertTrue(3 == map.size());
+        Assert.assertEquals(3, map.size());
     }
 
     @Test
@@ -30,7 +30,7 @@ public class HashMapTest {
         Assert.assertEquals("Two",map.get("2"));
         Assert.assertEquals("One",map.get("1"));
         Assert.assertEquals("Three",map.get("3"));
-        Assert.assertTrue(3 == map.size());
+        Assert.assertEquals(3, map.size());
     }
 
     @Test
@@ -43,7 +43,7 @@ public class HashMapTest {
         Assert.assertEquals("Two",map.get("2"));
         Assert.assertEquals("One",map.get("1"));
         Assert.assertEquals("Three",map.get("3"));
-        Assert.assertTrue(3 == map.size());
+        Assert.assertEquals(3, map.size());
     }
 
     @Test
@@ -57,6 +57,6 @@ public class HashMapTest {
         Assert.assertEquals("Two",map.get("2"));
         Assert.assertEquals("One",map.get("1"));
         Assert.assertEquals("Three",map.get("3"));
-        Assert.assertTrue(3 == map.size());
+        Assert.assertEquals(3, map.size());
     }
 }
